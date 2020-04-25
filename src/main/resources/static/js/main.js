@@ -94,6 +94,8 @@ function onMessageReceived(payload) {
     } else if (message.type === 'LEAVE') {
         messageElement.classList.add('event-message');
         message.content = message.sender + ' left!';
+    } else if (message.type === 'NOTIFICATION') {
+        messageElement.classList.add('event-message');
     } else {
         messageElement.classList.add('chat-message');
 
